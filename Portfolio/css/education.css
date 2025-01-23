@@ -1,0 +1,283 @@
+.education-section {
+    padding: 4rem 1rem;
+    width: 100%;
+    margin: 0 auto;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.education-container {
+    width: 100%;
+    max-width: 80vw;
+    margin: 0 auto;
+}
+
+.education-title {
+    font-size: clamp(3rem, 6vw, 7rem);
+    font-weight: 500;
+    text-align: center;
+    margin-bottom: 2rem;
+    color: var(--title-color);
+}
+
+.education-intro {
+    font-size: clamp(1rem, 1.2vw, 1.25rem);
+    line-height: 1.6;
+    text-align: center;
+    margin-bottom: 3rem;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    color: var(--text-color);
+}
+
+.education-timeline {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+.education-item {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+    background-color: var(--item-bg-color);
+    border-radius: 15px;
+    padding: 1.5rem;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.education-item:hover {
+    transform: scale(1.02);
+    box-shadow: 0 6px 25px rgba(0, 0, 0, 0.15);
+}
+
+.education-content {
+    flex: 1;
+}
+
+.institution {
+    font-size: clamp(1.2rem, 2vw, 1.5rem);
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    color: var(--title-color);
+}
+
+.degree {
+    font-size: clamp(1rem, 1.5vw, 1.2rem);
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+    color: var(--text-color);
+}
+
+.year {
+    font-size: clamp(0.9rem, 1.2vw, 1rem);
+    color: var(--muted-color);
+    margin-bottom: 1rem;
+}
+
+.key-points {
+    list-style-type: none;
+    padding: 0;
+    margin-bottom: 1rem;
+}
+
+.key-points li {
+    margin-bottom: 0.5rem;
+    position: relative;
+    padding-left: 1.5rem;
+    color: var(--text-color);
+    font-size: clamp(0.9rem, 1.2vw, 1rem);
+}
+
+.key-points li::before {
+    content: '•';
+    position: absolute;
+    left: 0;
+    color: var(--accent-color);
+}
+
+.education-image {
+    flex: 0 0 250px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.edu-photo {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.github-link {
+    display: inline-flex;
+    align-items: center;
+    color: var(--accent-color);
+    text-decoration: none;
+    font-size: clamp(0.8rem, 1.1vw, 0.9rem);
+    transition: color 0.3s ease;
+}
+
+.github-link:hover {
+    color: var(--accent-color-hover);
+}
+
+.github-icon {
+    width: 1em;
+    height: 1em;
+    margin-right: 0.5rem;
+}
+
+.cv-link-container {
+    margin-top: 3rem;
+    text-align: center;
+}
+
+.cv-link {
+    display: inline-flex;
+    align-items: center;
+    color: inherit;
+    text-decoration: none;
+    border: 1px solid currentColor;
+    padding: 0.75rem 1.5rem;
+    border-radius: 10px;
+    font-size: clamp(0.9rem, 1.5vw, 1.2rem);
+    transition: all 0.3s ease;
+    font-weight: 300;
+    background: transparent;
+}
+
+.cv-link:hover {
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.cv-icon {
+    width: 1em;
+    height: 1em;
+    margin-right: 0.5rem;
+    vertical-align: middle;
+}
+
+/* Tema oscuro */
+.dark {
+    --bg-color: #000000;
+    --text-color: #ffffff;
+    --title-color: #ffffff;
+    --muted-color: #aaaaaa;
+    --item-bg-color: #111;
+    --accent-color: #00C6FF;
+    --accent-color-hover: #00A3CC;
+}
+
+/* Tema claro */
+.light {
+    --bg-color: #ffffff;
+    --text-color: #333333;
+    --title-color: #222222;
+    --muted-color: #888888;
+    --item-bg-color: #f8f9fa;
+    --accent-color: #9B4BFF;
+    --accent-color-hover: #7B3FCC;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+    .education-section {
+        padding: 3rem 1rem;
+    }
+
+    .education-item {
+        flex-direction: column;
+    }
+
+    .education-image {
+        order: -1;
+        margin-bottom: 1rem;
+        flex: 0 0 auto;
+        width: 100%;
+        max-width: 400px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media (max-width: 768px) {
+    .education-section {
+        padding: 2rem 1rem;
+    }
+
+    .education-intro {
+        margin-bottom: 2rem;
+    }
+
+    .education-timeline {
+        gap: 2rem;
+    }
+
+    .education-item {
+        padding: 1rem;
+    }
+
+    .education-content {
+        text-align: center;
+    }
+
+    .key-points {
+        text-align: left;
+        padding-left: 1rem;
+    }
+
+    .github-link {
+        justify-content: center;
+    }
+
+    .cv-link {
+        padding: 0.6rem 1.2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .education-title {
+        font-size: clamp(2rem, 8vw, 2.5rem);
+    }
+
+    .education-intro {
+        font-size: 1rem;
+    }
+
+    .institution {
+        font-size: 1.2rem;
+    }
+
+    .degree {
+        font-size: 1rem;
+    }
+
+    .year, .key-points li {
+        font-size: 0.9rem;
+    }
+
+    .github-link, .cv-link {
+        font-size: 0.9rem;
+    }
+}
+
+@media (min-width: 1025px) {
+    .education-image {
+        flex: 0 0 300px;
+    }
+
+    .edu-photo {
+        max-width: 100%;
+        max-height: 100%;
+        object-fit: cover;
+    }
+}
