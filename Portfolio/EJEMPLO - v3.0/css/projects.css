@@ -1,0 +1,154 @@
+.projects-section {
+    padding: 6rem 2rem;
+    width: 100%;
+    margin: 0 auto;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.projects-container {
+    width: 100%;
+    max-width: 80vw;
+    margin: 0 auto;
+}
+
+.projects-title {
+    font-size: clamp(3rem, 6vw, 7rem);
+    font-weight: 500;
+    text-align: center;
+    margin-bottom: 2rem;
+    color: var(--title-color);
+}
+
+.projects-intro {
+    font-size: clamp(1rem, 1.5vw, 1.25rem);
+    line-height: 1.6;
+    text-align: center;
+    margin-bottom: 4rem;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    color: var(--text-color);
+}
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(1px, 1fr));
+    gap:10rem;
+}
+
+.project-item {
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    background-color: var(--item-bg-color);
+}
+
+.project-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+.project-photo {
+    width: 100%;
+    height: 300px;
+    object-fit: fill;
+}
+
+.project-content {
+    padding: 1.5rem;
+}
+
+.project-name {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    color: var(--title-color);
+}
+
+.project-description {
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+    color: var(--text-color);
+}
+
+.project-tech {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.tech-tag {
+    padding: 0.25rem 0.5rem;
+    border-radius: 15px;
+    font-size: 0.8rem;
+    color: #ffffff;
+}
+
+.tech-tag.react { background-color: #61dafb; color: #000000; }
+.tech-tag.node { background-color: #68a063; }
+.tech-tag.mongodb { background-color: #4db33d; }
+.tech-tag.vue { background-color: #42b883; }
+.tech-tag.express { background-color: #259dff; }
+.tech-tag.postgresql { background-color: #336791; }
+.tech-tag.angular { background-color: #dd1b16; }
+.tech-tag.firebase { background-color: #ffca28; color: #000000; }
+.tech-tag.typescript { background-color: #007acc; }
+
+.project-link {
+    display: inline-flex;
+    align-items: center;
+    color: var(--accent-color);
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.project-link:hover {
+    color: var(--accent-color-hover);
+}
+
+.project-link-arrow {
+    margin-left: 0.5rem;
+    transition: transform 0.3s ease;
+}
+
+.project-link:hover .project-link-arrow {
+    transform: translateX(5px);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .projects-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Tema oscuro */
+.dark {
+    --bg-color: #000000;
+    --text-color: #ffffff;
+    --title-color: #ffffff;
+    --item-bg-color: #111;
+    --accent-color: #00C6FF;
+    --accent-color-hover: #00A3CC;
+}
+
+/* Tema claro */
+.light {
+    --bg-color: #ffffff;
+    --text-color: #333333;
+    --title-color: #222222;
+    --item-bg-color: #f8f9fa;
+    --accent-color: #9B4BFF;
+    --accent-color-hover: #7B3FCC;
+}
