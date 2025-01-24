@@ -12,10 +12,10 @@ document.addEventListener("DOMContentLoaded", () => {
             targetScrollPosition = 0
             break
           case 1: // Proyectos
-            targetScrollPosition = viewportHeight + viewportHeight * 1 + viewportHeight * 2.6
+            targetScrollPosition = viewportHeight + viewportHeight * 1 + viewportHeight * 4.28
             break
           case 2: // Horizontes
-            targetScrollPosition = document.documentElement.scrollHeight - viewportHeight * 1.85
+            targetScrollPosition = document.documentElement.scrollHeight - viewportHeight * 2.20
             break
           case 3: // Contact
             targetScrollPosition = document.documentElement.scrollHeight - viewportHeight
