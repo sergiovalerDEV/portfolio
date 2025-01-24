@@ -14,6 +14,7 @@
   background-color: var(--nav-bg);
   z-index: 1000;
   transition: background-color 0.3s;
+  height: auto;
 }
 
 .nav-container {
@@ -23,6 +24,8 @@
   justify-content: space-between;
   align-items: center;
   padding: 1rem 2rem;
+  backdrop-filter: blur(10px);
+  height: 90px;
 }
 
 .logo-img {
@@ -123,7 +126,7 @@
 
 @media (max-width: 768px) {
   .main-nav {
-      height: 50px;
+      transform: translateY(-4vh);
   }
 
   .nav-container {
@@ -133,11 +136,11 @@
   .logo-img {
       height: 40px;
       width: auto;
-      transform: translateX(-1vw) translateY(-1.6vh);
+      transform: translateY(2vh);
   }
 
   .menu-toggle {
-      transform: translateY(-1.5vh);
+      transform: translateY(2vh);
       display: block;
       order: 2;
   }
@@ -151,7 +154,7 @@
       padding-top: 1rem;
       border-top: 1px solid var(--border-color);
       background-color: var(--nav-bg);
-      backdrop-filter: blur(30px);
+      backdrop-filter: blur(10px);
   }
 
   .nav-content.active {
