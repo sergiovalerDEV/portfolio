@@ -96,6 +96,7 @@ body.light .stat-card {
     }
 
     .about-image {
+        max-width: 80vw;
         margin: 0 auto;
     }
 

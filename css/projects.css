@@ -156,6 +156,16 @@
     .projects-container {
       max-width: 90vw;
     }
+
+    .projects-intro {
+        max-width: 80vw;
+      }
+
+    .project-item {
+        max-width: 80vw;
+        justify-content: center;
+        margin: 0 auto;  
+        }
   
     .projects-grid {
       gap: 5rem;

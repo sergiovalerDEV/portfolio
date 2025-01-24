@@ -100,6 +100,10 @@
     .future-horizons-grid {
         gap: 1.5rem;
     }
+
+    .future-horizons-intro {
+        max-width: 80vw;
+    }
 }
 
 @media (max-width: 992px) {
