@@ -166,6 +166,7 @@
 @media (max-width: 480px) {
     .future-horizons-section {
         padding: 3rem 0.75rem;
+        max-width: 80vw;
     }
 
     .future-horizons-title {
