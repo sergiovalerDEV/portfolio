@@ -151,7 +151,7 @@
       padding-top: 1rem;
       border-top: 1px solid var(--border-color);
       background-color: var(--nav-bg);
-      backdrop-filter: blur(10px);
+      backdrop-filter: blur(30px);
   }
 
   .nav-content.active {
