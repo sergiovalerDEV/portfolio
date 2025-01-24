@@ -3,13 +3,13 @@
     width: 100vw;
     margin: 0 auto;
     min-height: 70vh;
-    max-height: 100vh;
     display: inline-block;
     align-items: center;
     justify-content: center;
     background-color: var(--bg-color);
     color: var(--text-color);
     transition: background-color 0.3s ease, color 0.3s ease;
+    margin-bottom: 20vh;
   }
   
   .skills-title {

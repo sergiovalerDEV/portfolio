@@ -157,20 +157,166 @@
     margin-right: 0.75rem;
   }
   
-  /* Responsive */
-  @media (max-width: 768px) {
-    .contact-content {
-      flex-direction: column;
-    }
-  
-    .contact-image-wrapper {
-      min-height: 200px;
-    }
-  
-    .contact-form-wrapper {
-      padding: 2rem;
-    }
+  /* Responsive Styles */
+@media (max-width: 1200px) {
+  .contact-section {
+      width: 90vw;
   }
+
+  .contact-content {
+      gap: 3rem;
+  }
+}
+
+@media (max-width: 992px) {
+  .contact-section {
+      padding: 5rem 1.5rem;
+  }
+
+  .contact-title {
+      font-size: clamp(2.5rem, 5vw, 6rem);
+      margin-bottom: 3rem;
+  }
+
+  .contact-content {
+      gap: 2rem;
+  }
+
+  .contact-form-wrapper {
+      padding: 2.5rem;
+  }
+
+  .contact-cta {
+      font-size: 1.3rem;
+  }
+
+  .form-title {
+      font-size: 1.8rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .contact-section {
+      padding: 4rem 1rem;
+      width: 95vw;
+  }
+
+  .contact-title {
+      font-size: clamp(2rem, 4vw, 5rem);
+      margin-bottom: 2.5rem;
+  }
+
+  .contact-content {
+      flex-direction: column;
+      gap: 1.5rem;
+  }
+
+  .contact-image-wrapper {
+      min-height: 200px;
+  }
+
+  .contact-form-wrapper {
+      padding: 2rem;
+  }
+
+  .contact-cta {
+      font-size: 1.2rem;
+      margin-bottom: 1.5rem;
+  }
+
+  .form-title {
+      font-size: 1.6rem;
+      margin-bottom: 1.5rem;
+  }
+
+  .form-group {
+      margin-bottom: 1rem;
+  }
+
+  .submit-btn {
+      padding: 0.6rem 1.2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .contact-section {
+      padding: 3rem 0.75rem;
+  }
+
+  .contact-title {
+      font-size: clamp(1.75rem, 3.5vw, 4rem);
+      margin-bottom: 2rem;
+  }
+
+  .contact-form-wrapper {
+      padding: 1.5rem;
+  }
+
+  .contact-cta {
+      font-size: 1.1rem;
+  }
+
+  .form-title {
+      font-size: 1.4rem;
+      margin-bottom: 1.2rem;
+  }
+
+  .form-group label {
+      font-size: 0.9rem;
+  }
+
+  .form-group input,
+  .form-group textarea {
+      padding: 0.6rem;
+      font-size: 0.9rem;
+  }
+
+  .submit-btn {
+      font-size: 0.9rem;
+      padding: 0.5rem 1rem;
+  }
+
+  .social-links {
+      flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 360px) {
+  .contact-section {
+      padding: 2.5rem 0.5rem;
+  }
+
+  .contact-title {
+      font-size: clamp(1.5rem, 3vw, 3.5rem);
+  }
+
+  .contact-form-wrapper {
+      padding: 1.2rem;
+  }
+
+  .contact-cta {
+      font-size: 1rem;
+  }
+
+  .form-title {
+      font-size: 1.2rem;
+  }
+
+  .form-group label {
+      font-size: 0.85rem;
+  }
+
+  .form-group input,
+  .form-group textarea {
+      padding: 0.5rem;
+      font-size: 0.85rem;
+  }
+
+  .submit-btn {
+      font-size: 0.85rem;
+      padding: 0.4rem 0.8rem;
+  }
+}
   
   /* Light theme */
   body.light {

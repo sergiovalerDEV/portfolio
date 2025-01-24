@@ -18,7 +18,7 @@
   }
   
   .nav-container {
-    width: 80VW;
+    width: 80vw;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
@@ -27,8 +27,9 @@
   }
   
   .logo-img {
-    height: 40px;
+    height:90px;
     width: auto;
+    transform: translateX(-1vw);
   }
   
   .nav-content {

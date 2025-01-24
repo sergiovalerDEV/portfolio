@@ -91,9 +91,134 @@
 }
 
 /* Responsive */
+/* Responsive Styles */
+@media (max-width: 1200px) {
+    .future-horizons-container {
+        max-width: 90vw;
+    }
+
+    .future-horizons-grid {
+        gap: 1.5rem;
+    }
+}
+
+@media (max-width: 992px) {
+    .future-horizons-section {
+        padding: 5rem 1.5rem;
+    }
+
+    .future-horizons-title {
+        font-size: clamp(2.5rem, 5vw, 6rem);
+    }
+
+    .future-horizons-intro {
+        font-size: clamp(0.9rem, 1.3vw, 1.1rem);
+        margin-bottom: 3rem;
+    }
+
+    .future-horizons-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
 @media (max-width: 768px) {
+    .future-horizons-section {
+        padding: 4rem 1rem;
+        max-height: none;
+    }
+
+    .future-horizons-container {
+        max-width: 95vw;
+    }
+
+    .future-horizons-title {
+        font-size: clamp(2rem, 4vw, 5rem);
+        margin-bottom: 1.5rem;
+    }
+
+    .future-horizons-intro {
+        font-size: clamp(0.85rem, 1.2vw, 1rem);
+        margin-bottom: 2.5rem;
+    }
+
     .future-horizons-grid {
         grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    .future-horizon-icon {
+        height: 180px;
+    }
+
+    .horizon-name {
+        font-size: 1.3rem;
+    }
+
+    .horizon-description {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .future-horizons-section {
+        padding: 3rem 0.75rem;
+    }
+
+    .future-horizons-title {
+        font-size: clamp(1.75rem, 3.5vw, 4rem);
+        margin-bottom: 1rem;
+    }
+
+    .future-horizons-intro {
+        font-size: clamp(0.8rem, 1.1vw, 0.95rem);
+        margin-bottom: 2rem;
+    }
+
+    .future-horizons-grid {
+        gap: 1.5rem;
+    }
+
+    .future-horizon-icon {
+        height: 160px;
+    }
+
+    .future-horizon-content {
+        padding: 1rem;
+    }
+
+    .horizon-name {
+        font-size: 1.2rem;
+        margin-bottom: 0.75rem;
+    }
+
+    .horizon-description {
+        font-size: 0.85rem;
+    }
+}
+
+@media (max-width: 360px) {
+    .future-horizons-section {
+        padding: 2.5rem 0.5rem;
+    }
+
+    .future-horizons-title {
+        font-size: clamp(1.5rem, 3vw, 3.5rem);
+    }
+
+    .future-horizons-intro {
+        font-size: clamp(0.75rem, 1vw, 0.9rem);
+    }
+
+    .future-horizon-icon {
+        height: 140px;
+    }
+
+    .horizon-name {
+        font-size: 1.1rem;
+    }
+
+    .horizon-description {
+        font-size: 0.8rem;
     }
 }
 
