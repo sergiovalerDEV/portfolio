@@ -128,9 +128,10 @@
 }
 
 @media (max-width: 768px) {
+  
   .main-nav {
       transform: translateY(-4vh);
-      height: auto;
+      height: 70px;
   }
 
   .nav-container {
