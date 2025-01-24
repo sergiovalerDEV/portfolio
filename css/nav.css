@@ -123,11 +123,24 @@
   }
   
   @media (max-width: 768px) {
+
+    .main-nav {
+      height: 50px;
+    }
+
     .nav-container {
       flex-wrap: wrap;
     }
+
+    .logo-img {
+      height:40px;
+      width: auto;
+      transform: translateX(-1vw);
+      transform: translateY(-1.6vh);
+    }
   
     .menu-toggle {
+      transform: translateY(-1.5vh);
       display: block;
       order: 2;
     }
