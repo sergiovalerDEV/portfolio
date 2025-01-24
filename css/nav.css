@@ -6,6 +6,9 @@
   --accent-color: #00c6ff;
 }
 
+.hero{
+  height: 50px;
+}
 .main-nav {
   position: fixed;
   top: 0;
@@ -14,7 +17,7 @@
   background-color: var(--nav-bg);
   z-index: 1000;
   transition: background-color 0.3s;
-  height: auto;
+  height: 50px;
 }
 
 .nav-container {
@@ -25,11 +28,11 @@
   align-items: center;
   padding: 1rem 2rem;
   backdrop-filter: blur(10px);
-  height: 90px;
+  height: 50px;
 }
 
 .logo-img {
-  height: 90px;
+  height: 50px;
   width: auto;
   transform: translateX(-1vw);
 }
@@ -127,6 +130,7 @@
 @media (max-width: 768px) {
   .main-nav {
       transform: translateY(-4vh);
+      height: auto;
   }
 
   .nav-container {

@@ -96,6 +96,7 @@ h1, h2, .gradient-text {
     .container {
         flex-direction: column;
         text-align: center;
+        height: 150px;
     }
 
     .content {

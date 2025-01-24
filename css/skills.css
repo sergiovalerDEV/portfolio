@@ -9,7 +9,7 @@
     background-color: var(--bg-color);
     color: var(--text-color);
     transition: background-color 0.3s ease, color 0.3s ease;
-    margin-bottom: 20vh;
+    margin-bottom: 30vh;
   }
   
   .skills-title {
@@ -71,10 +71,12 @@
     object-fit: fill;
   }
   
+  .skill-icon {
+    transition: transform 0.3s ease;
+  }
+  
   .skill-icon:hover {
-    cursor: pointer;
-    transform: translateY(-5px);
-    box-shadow: 0 5px 15px var(--icon-shadow-color);
+    transform: scale(1.05);
   }
   
   .skill-name {
