@@ -75,7 +75,7 @@ h1, h2, .gradient-text {
     display: inline-block;
     text-decoration: none;
     padding: 12px 24px;
-    border-radius: 30px;
+    border-radius: 15px;
     font-size: clamp(1rem, 2vw, 1.5rem);
     font-weight: 500;
     text-align: center;
@@ -86,9 +86,7 @@ h1, h2, .gradient-text {
   }
   
   .contact-button:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
-    background: linear-gradient(45deg, var(--button-gradient-end), var(--button-gradient-start));
+    transform: scale(1.05);
   }
 
 @media (max-width: 1024px) {

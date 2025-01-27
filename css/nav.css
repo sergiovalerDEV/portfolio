@@ -32,9 +32,12 @@
 }
 
 .logo-img {
-  height: 50px;
+  height: 40px;
   width: auto;
-  transform: translateX(-1vw);
+  justify-content: left;
+  margin-left: 0px;
+  padding-left: 0px;
+  transform: translateX(-1.5vw);
 }
 
 .nav-content {

@@ -3,7 +3,8 @@
   width: 100%;
   margin: 0 auto;
   max-width: 80vw;
-  min-height: 100vh;
+  height: auto;
+  margin-bottom: 5vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -16,6 +17,10 @@
   width: 100%;
   max-width: 80vw;
   margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centra todos los elementos */
+  gap: 2rem; /* Espacio entre los elementos */
 }
 
 .projects-title {
@@ -39,8 +44,8 @@
 
 .projects-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Flexibilidad para 2 o más tarjetas por fila */
+  gap: 3rem; /* Espacio entre las tarjetas */
 }
 
 .project-item {
@@ -189,7 +194,7 @@
   }
 
   .projects-grid {
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* 2 o más tarjetas por fila dependiendo del espacio */
   }
 }
 
@@ -213,7 +218,7 @@
   }
 
   .projects-grid {
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); /* Mejora la proporción de las tarjetas */
   }
 
   .project-name {
@@ -241,7 +246,7 @@
   }
 
   .projects-grid {
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr; /* 1 tarjeta por fila */
   }
 
   .project-content {
@@ -260,6 +265,13 @@
 
   .tech-tag {
     font-size: 0.7rem;
+  }
+}
+
+/* Pantallas de 1080p */
+@media (min-width: 1080px) and (max-width: 1920px) {
+  .projects-grid {
+    grid-template-columns: repeat(auto-fit, minmax(242px, 1fr)); /* 10% más de ancho para cada tarjeta */
   }
 }
 
@@ -282,13 +294,3 @@
   --accent-color: #9b4bff;
   --accent-color-hover: #7b3fcc;
 }
-
-/* Soft Skills Section */
-.soft-skills-section .skill-icon {
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.soft-skills-section .skill-icon:hover {
-  transform: scale(1.05);
-}
-
