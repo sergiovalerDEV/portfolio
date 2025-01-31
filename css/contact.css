@@ -114,12 +114,11 @@
     align-items: center;
     color: var(--button-text-color);
     text-decoration: none;
-    border: 1px solid currentColor;
+    border: 2px solid currentColor;
     padding: 0.75rem 1.5rem;
     border-radius: 10px;
     font-size: clamp(0.9rem, 1.5vw, 1.2rem);
     transition: all 0.3s ease;
-    font-weight: 300;
     background: var(--button-bg-color);
     cursor: pointer;
   }

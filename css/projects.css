@@ -19,8 +19,8 @@
   margin: 0 auto;
   display: flex;
   flex-direction: column;
-  align-items: center; /* Centra todos los elementos */
-  gap: 2rem; /* Espacio entre los elementos */
+  align-items: center;
+  gap: 2rem;
 }
 
 .projects-title {
@@ -44,8 +44,8 @@
 
 .projects-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Flexibilidad para 2 o más tarjetas por fila */
-  gap: 3rem; /* Espacio entre las tarjetas */
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 3rem;
 }
 
 .project-item {
@@ -128,7 +128,12 @@
 .tech-tag.github {
   background-color: #181717;
 }
-.tech-tag.js,
+.tech-tag.docker {
+  background-color: #2496ed;
+}
+.tech-tag.hexagonal {
+  background-color: #663399;
+}
 .tech-tag.javascript {
   background-color: #f7df1e;
   color: #000000;
@@ -136,8 +141,23 @@
 .tech-tag.postgresql {
   background-color: #336791;
 }
+.tech-tag.nodejs {
+  background-color: #339933;
+}
+.tech-tag.html {
+  background-color: #e34f26;
+}
+.tech-tag.css {
+  background-color: #1572b6;
+}
 .tech-tag.rest {
   background-color: #0096d6;
+}
+.tech-tag.php {
+  background-color: #777bb4;
+}
+.tech-tag.bootstrap {
+  background-color: #7952b3;
 }
 .tech-tag.maptiler {
   background-color: #00acd7;
@@ -145,8 +165,39 @@
 .tech-tag.api {
   background-color: #3498db;
 }
-.tech-tag.docker {
-  background-color: #2496ed;
+.tech-tag.uxui {
+  background-color: #ff6b6b;
+}
+
+.tech-tag.cloud {
+  background-color: #4285F4;
+}
+.tech-tag.certification {
+  background-color: #34A853;
+}
+.tech-tag.optimization {
+  background-color: #EA4335;
+}
+.tech-tag.architecture {
+  background-color: #8E44AD;
+}
+.tech-tag.scalability {
+  background-color: #2ECC71;
+}
+.tech-tag.modular {
+  background-color: #E67E22;
+}
+.tech-tag.design-patterns {
+  background-color: #3498DB;
+}
+.tech-tag.kubernetes {
+  background-color: #326CE5;
+}
+.tech-tag.containers {
+  background-color: #FF6B6B;
+}
+.tech-tag.devops {
+  background-color: #6C5CE7;
 }
 
 .project-link {
@@ -194,7 +245,7 @@
   }
 
   .projects-grid {
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* 2 o más tarjetas por fila dependiendo del espacio */
+    grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
   }
 }
 
@@ -218,7 +269,7 @@
   }
 
   .projects-grid {
-    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); /* Mejora la proporción de las tarjetas */
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   }
 
   .project-name {
@@ -246,7 +297,7 @@
   }
 
   .projects-grid {
-    grid-template-columns: 1fr; /* 1 tarjeta por fila */
+    grid-template-columns: 1fr;
   }
 
   .project-content {
@@ -265,13 +316,6 @@
 
   .tech-tag {
     font-size: 0.7rem;
-  }
-}
-
-/* Pantallas de 1080p */
-@media (min-width: 1080px) and (max-width: 1920px) {
-  .projects-grid {
-    grid-template-columns: repeat(auto-fit, minmax(242px, 1fr)); /* 10% más de ancho para cada tarjeta */
   }
 }
 
@@ -294,3 +338,20 @@
   --accent-color: #9b4bff;
   --accent-color-hover: #7b3fcc;
 }
+
+/*Agile Methodologies*/
+.tech-tag.agile { background-color: #0052CC; }
+.tech-tag.scrum { background-color: #6DB33F; }
+.tech-tag.kanban { background-color: #FF5A00; }
+.tech-tag.teamwork { background-color: #6C5CE7; }
+/* Nuevos colores para las etiquetas de Python */
+.tech-tag.python { background-color: #3776AB; }
+.tech-tag.django { background-color: #092E20; }
+.tech-tag.flask { background-color: #000000; }
+.tech-tag.data { background-color: #FF6384; }
+
+/* Nuevos colores para las etiquetas de .NET */
+.tech-tag.dotnet { background-color: #512BD4; }
+.tech-tag.csharp { background-color: #239120; }
+.tech-tag.aspnet { background-color: #0082C9; }
+.tech-tag.entity { background-color: #B4004E; }

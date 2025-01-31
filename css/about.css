@@ -21,15 +21,15 @@
     display: flex;
     gap: 4rem;
     align-items: center;
-    justify-content: center; /* Centrado horizontal */
-    width: 100%; /* Asegura que ocupe todo el ancho disponible */
+    justify-content: center; 
+    width: 100%; 
 }
 
 .about-image {
     flex: 1;
     display: flex;
-    justify-content: center; /* Centrado horizontal */
-    align-items: center; /* Centrado vertical */
+    justify-content: center; 
+    align-items: center; 
 }
 
 .profile-image {
@@ -38,12 +38,12 @@
     height: auto;
     border-radius: 20px;
     object-fit: cover;
-    margin: 0; /* Eliminar cualquier margen que pueda desalinear */
+    margin: 0; 
 }
 
 .about-content {
     flex: 1;
-    width: 100%; /* Ocupa el 100% del ancho disponible */
+    width: 100%; 
 }
 
 .about-text {

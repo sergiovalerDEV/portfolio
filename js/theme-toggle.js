@@ -2,7 +2,6 @@ document.addEventListener('DOMContentLoaded', (event) => {
     const themeToggle = document.getElementById('theme-toggle');
     const body = document.body;
 
-    // Inicializar el tema
     if (localStorage.getItem('theme') === 'dark') {
         body.classList.add('dark');
         body.classList.remove('light');
@@ -22,6 +21,5 @@ document.addEventListener('DOMContentLoaded', (event) => {
         }
     });
 
-    // Asegurarse de que los iconos se rendericen correctamente
     feather.replace();
 });

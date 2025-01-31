@@ -10,7 +10,6 @@ document.addEventListener('DOMContentLoaded', () => {
         menuToggle.classList.toggle('active');
     });
 
-    // Cerrar menú al hacer clic fuera
     document.addEventListener('click', (event) => {
         if (!navContent.contains(event.target) && !menuToggle.contains(event.target)) {
             navContent.classList.remove('active');
@@ -18,7 +17,6 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 
-    // Cerrar menú al hacer clic en un enlace de navegación
     const navLinks = document.querySelectorAll('.nav-links a');
     navLinks.forEach(link => {
         link.addEventListener('click', () => {
@@ -27,7 +25,6 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-    // Manejar el cambio de tema
     themeToggle.addEventListener('click', () => {
         html.classList.toggle('dark');
         html.classList.toggle('light');
@@ -39,7 +36,6 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 
-    // Inicializar el tema
     if (localStorage.getItem('theme') === 'dark') {
         html.classList.add('dark');
         html.classList.remove('light');
@@ -48,6 +44,5 @@ document.addEventListener('DOMContentLoaded', () => {
         html.classList.remove('dark');
     }
 
-    // Asegurarse de que los iconos se rendericen correctamente
     feather.replace();
 });
